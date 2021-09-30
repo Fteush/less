@@ -9,8 +9,28 @@
     justify-content: space-between;
 }
 
+footer__nav {
+    display: flex;
+}
+
 .footer__nav-link {
     color: @white;
+    margin-right: 1.5rem;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+    &--btn {
+        padding: 0.6rem 1.4rem;
+        border-radius: 20px;
+        border: 1px solid @gray-light;
+        &:hover {
+            text-decoration: none;
+            background-color: @gray-light;
+            color: @black;
+            font-weight: 500;
+        }
+    }
 }
 
 .footer__copyright {
